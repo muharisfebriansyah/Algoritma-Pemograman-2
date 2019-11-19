@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+struct data{
+	int nim;
+	float nilai;
+	string nama;
+};
+
+int main(){
+	int n;
+	float batas;
+	cin>>n;
+	cout<<"BATAS LULUS : "; cin>>batas;
+	data x[n];
+	for(int i=0;i<n;i++){
+		cin>>x[i].nama;
+		cin>>x[i].nim;
+		cin>>x[i].nilai;
+	}
+	for(int i=0;i<n;i++){
+	if(x[i].nilai>=batas){
+		cout<<" DATA MAHASISWA YANG LULUS "<<endl;	
+		cout<<x[i].nama<<endl;
+		cout<<x[i].nim<<endl;
+		cout<<x[i].nilai<<endl;
+	}
+	}
+}
+	
